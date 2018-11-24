@@ -2,9 +2,10 @@
   "name": "reactjs-first-step",
   "version": "1.0.0",
   "description": "First project with ReactJS",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "compile": "webpack",
+    "start": "node server.js",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +18,10 @@
     "url": "https://github.com/franzamd/ReactJS-first-step/issues"
   },
   "homepage": "https://github.com/franzamd/ReactJS-first-step#readme",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.16.4",
+    "lodash": "^4.17.11"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
@@ -25,6 +29,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "webpack": "^4.26.0",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-hot-middleware": "^2.24.3"
   }
 }
